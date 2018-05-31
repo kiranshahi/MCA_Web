@@ -1,13 +1,13 @@
 <?php
 	
-	$pdo = new PDO("mysql:host=localhost; dbhost=test", "root", "");
-	$fulllname = $_POST["fulllname"];
+	$pdo = new PDO("mysql:host=localhost; dbname=test", "root", "");
+	$fulllname = $_POST["fullname"];
 	$username = $_POST["username"];
 	$email = $_POST["email"];
 	$password = $_POST["password"];
 
-	$sql = "INSERT INTO users(fulllname, username, email, password) values(:fulllname, :username, :email, :password)";
-	$st -> $pdo -> prepare($sql),
+	$sql = "INSERT INTO users(Fulllname, Username, Email, Password) VALUES (:fulllname, :username, :email, :password)";
+	$st = $pdo -> prepare($sql);
 	$st -> bindParam("fulllname", $fulllname);
 	$st -> bindParam("username", $username);
 	$st -> bindParam("email", $email);
