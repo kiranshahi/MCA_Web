@@ -75,6 +75,14 @@
 			}
 		}
 		
+		function deletById($id) {
+			$conn = dbCon();
+			$sql = $conn->prepare("DELETE FROM cds WHERE id=:id");
+			$sql->bindParam(':id', $id);
+			$sql->execute();
+			echo "Deleted successfully";
+		}
+		
 		//insert($title,$artist,$price,$year);
 		
 	?>
