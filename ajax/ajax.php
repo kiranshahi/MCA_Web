@@ -1,0 +1,1 @@
+<?php echo "Reply from ajax, received data name:" . $_POST['name'] . ", age: " . $_POST['age'];
