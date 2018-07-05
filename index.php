@@ -10,10 +10,15 @@
 	**/
 	function dbCon() {
 		try {
-			$servername = "localhost";
-			$username = "root";
-			$password = "";
-			$conn = new PDO("mysql:host=$servername;dbname=mca", $username, $password);
+			// Server name according to your configuration. For most case host name will be localhost in local database.
+			$servername = "eu-cdbr-west-02.cleardb.net";
+			// Name of database that you have created.
+			$dbname = "heroku_b5ea113c443cc79";
+			// Username of database. For most case it will be root in local database.
+			$username = "b057b186fe4e26";
+			// Password of the database. For most case it will be empty in local database
+			$password = "02e2fafa";
+			$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 			return $conn;
 		} catch(PDOException $e) {
 			echo "Connection failed: " . $e->getMessage();
