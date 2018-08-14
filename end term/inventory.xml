@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="inventory.xsl"?>
+<inventory>
+    <book instock="yes" isbn="3245675498564">
+        <title>Toursit and Tourism</title>
+        <author>Ramesh Sharma</author>
+        <publisher>PHI</publisher>
+        <binding>hard</binding>
+        <page>430</page>
+        <price>579.00</price>
+    </book>
+    <book instock="yes" isbn="3245543598564">
+        <title>The Festivals of Nepal</title>
+        <author>Mary Anderson</author>
+        <publisher>EEE Books</publisher>
+        <binding>soft</binding>
+        <page>836</page>
+        <price>695.00</price>
+    </book>
+    <book instock="no" isbn="4535543598564">
+        <title>Algorithms</title>
+        <author>Corman Stein</author>
+        <publisher>PHI</publisher>
+        <binding>hard</binding>
+        <page>1336</page>
+        <price>695.00</price>
+    </book>
+</inventory>
